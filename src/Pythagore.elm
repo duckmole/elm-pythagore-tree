@@ -1,6 +1,13 @@
 module Pythagore where
 
-add : Int -> Int -> Int
+type alias Point = (Float, Float)
 
-add a b =
-  a + b
+createSquare : Point -> Float -> List Point
+
+createSquare (x, y) length =
+  [(x,y), (x, y + length), (x + length, y + length), (x + length, y)]
+
+newLength : Float -> Float -> Float
+
+newLength length angle =
+  length*cos(degrees angle)

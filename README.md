@@ -7,6 +7,8 @@ Dojo in elm
 *  clone the projet
 *  `elm-test init`
 
+elm package install evancz/elm-html
+
 ## Run the test
 
   elm-test tests/TestRunner.elm
